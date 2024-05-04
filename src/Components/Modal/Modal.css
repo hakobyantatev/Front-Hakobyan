@@ -1,0 +1,95 @@
+.Modal{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 999999;
+}
+
+.Modal .Modal-body{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.Modal .Modal-body img{
+  display: block;
+  margin: 0 auto;
+  width: 65%;
+}
+
+.Modal .Modal-body .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.Modal .Modal-body .info .tags{
+  color: #EB0028;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.Modal .Modal-body .info .title{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.Modal .Modal-body .info .autor{
+  display: flex;
+  gap: .3rem;
+  font-size: 12;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.Modal .Modal-body .info .autor span::before{
+  content: "";
+  background: #D7D7D7;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.Modal .Modal-body .info .autor span{
+  font-weight: 400;
+  color: #9B9B9B;
+  font-size: 12px;
+}
+
+.Modal .Modal-body .info .text{
+  font-size: 14px;
+  color: #929292;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.Modal .Modal-body .info button{
+  /* width: 20%; */
+  font-size: 1.2rem;
+  padding: .5rem 3rem;
+  margin: 0 auto;
+  cursor: pointer;
+  background: #EB0028;
+  border: none;
+  color: white;
+  border-radius: .3rem;
+  font-weight: 500;
+}
+
+.Modal .Modal-body .info button:hover{
+  color: #EB0028;
+  border: 1px solid #EB0028;
+  background: white;
+}
